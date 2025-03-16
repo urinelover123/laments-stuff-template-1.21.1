@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "laments-stuff",
+	"version": "${version}",
+	"name": "Laments Stuff",
+	"description": "Items, weapons, armors and tweaks for me",
+	"authors": [
+		"jslament"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "ARR",
+	"icon": "assets/laments-stuff/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.jslament.lamentsstuff.LamentsStuff"
+		],
+		"fabric-datagen": [
+			"net.jslament.lamentsstuff.LamentsStuffDataGenerator"
+		],
+		"client": [
+			"net.jslament.lamentsstuff.LamentsStuffClient"
+		]
+	},
+	"mixins": [
+		"laments-stuff.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
